@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bun Bun Bake Shop</title>
+
+  <!-- TypeKit Fonts -->
+  <script src="https://use.typekit.net/bqe4czj.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">	
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Scripts -->	
+  <script src="js/main.js"></script>
+  <script src="js/product.js"></script>
+  <script src="js/cart.js"></script>  
+
+  <!-- Favicon -->  
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<!-- Body -->	
+<body id="product">
+
+  <!-- Content Container -->	
+  <div class="container" id="container">
+
+    <!-- Navigation -->	
+    <nav>
+      <a href="browse.html" id="logo"><< Back</a>
+      <a href="#" id="cart-link">Cart<span id="number-items"></span></a>
+    </nav>
+
+    <!-- Main Section -->	
+    <section>
+
+      <!-- Product Description --> 
+      <h1 id="product-name">Placeholder Title</h1>
+      <p id="product-desc-long">Placeholder description.</p>
+      <div id="add-to-cart-bar">
+        <span id="product-qty-label">Qty</span>
+        <select name="product-qty" id="product-qty">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <span id="product-price">$25</span>
+        <input id="add-to-cart-button" value="+ add to cart" type="submit" href="#"></input>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Cart -->	
+  <!-- TODO: Dynamically insert HTML content --> 
+  <div class="cart" id="cart">
+    <span id="close-cart"></span>
+    <h1>My Cart</h1>
+    <ul id="cart-items">
+    </ul>
+    <span id="cart-items-total">Total $72</span>
+    <a id="check-out" href="#">Check out</a>
+  </div>
+
+</body>
+</html>

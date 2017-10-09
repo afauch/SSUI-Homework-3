@@ -1,23 +1,58 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>My Awesome Store</title>
+  <meta charset="UTF-8">
+  <title>Bun Bun Bake Shop</title>
 
-  <!--The following line loads in your CSS style sheet-->
-  <link rel="stylesheet" href="styles/index.css">
+  <!-- TypeKit Fonts -->
+  <script src="https://use.typekit.net/bqe4czj.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">	
+  <link rel="stylesheet" href="css/main.css">
 
-  <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <!-- Scripts -->	
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+
+  <!-- Favicon -->  
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />  
+
 </head>
 
-<body>
-  <h1>Welcome to my store!</h1>
-  <p>This store sells all kinds of items. We have old items and new items. Some items are more expensive than others.</p>
-  <img src="./resources/images/whatsInStore.png" class="starterImage" alt="a picture of a box that says what's in store for your store"></img>
-  <p>Feel free to delete this content! This is only to put down some html tags and css to get you started.</p>
+<!-- Body -->	
+<body id="home">
+
+  <!-- Content Container -->	
+  <div class="container" id="container">
+
+    <!-- Navigation -->	
+    <nav>
+      <a href="index.html" id="logo">Bun Bun Bake Shop</a>
+      <a href="#"" id="cart-link">Cart<span id="number-items"></span></a>
+    </nav>
+
+    <!-- Main Section -->	
+    <section>
+      <h1>Bun Bun Bake Shop</h1>
+      <p>makes cinnamon buns in PGH <br/>but you can buy them online too.</p>
+      <a href="browse.html">Browse them buns >> </a>
+    </section>
+
+  </div>
+
+  <!-- Cart -->	
+  <!-- TODO: Dynamically insert HTML content --> 
+  <div class="cart" id="cart">
+    <span id="close-cart"></span>
+    <h1>My Cart</h1>
+    <ul id="cart-items">
+    </ul>
+    <span id="cart-items-total">Total $72</span>
+    <a id="check-out" href="#">Check out</a>
+  </div>
+
 </body>
 </html>

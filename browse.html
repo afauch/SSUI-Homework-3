@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bun Bun Bake Shop</title>
+
+  <!-- TypeKit Fonts -->
+  <script src="https://use.typekit.net/bqe4czj.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">	
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Scripts -->	
+  <script src="js/main.js"></script>
+  <script src="js/browse.js"></script>
+  <script src="js/cart.js"></script>  
+
+  <!-- Favicon -->  
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+</head>
+
+<!-- Body -->	
+<body id="browse">
+
+  <!-- Content Container -->	
+  <div class="container" id="container">
+
+    <!-- Navigation -->	
+    <nav>
+      <a href="index.html" id="logo">Bun Bun Bake Shop</a>
+      <a href="#"" id="cart-link">Cart<span id="number-items"></span></a>
+    </nav>
+
+    <!-- Main Section -->	
+    <section>
+
+    <!-- Options --> 
+    <ul id="browse-items">
+    </ul>
+    </section>
+
+  </div>
+
+  <!-- Cart -->	
+  <!-- TODO: Dynamically insert HTML content --> 
+  <div class="cart" id="cart">
+    <span id="close-cart"></span>
+    <h1>My Cart</h1>
+    <ul id="cart-items">
+      <li class="cart-item">
+        <select name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <span class="cart-item-title">Maple Apple Pecan</span>
+        <span class="cart-item-price">$25</span>
+        <span class="cart-item-remove">Remove</span>
+      </li>
+      <li class="cart-item">
+        <select name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <span class="cart-item-title">Maple Apple Pecan</span>
+        <span class="cart-item-price">$25</span>
+        <span class="cart-item-remove">Remove</span>
+      </li>
+      <li class="cart-item">
+        <select name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <span class="cart-item-title">Maple Apple Pecan</span>
+        <span class="cart-item-price">$25</span>
+        <span class="cart-item-remove">Remove</span>
+      </li>
+    </ul>
+    <span id="cart-items-total">Total $72</span>
+    <a id="check-out" href="#">Check out</a>
+  </div>
+
+</body>
+</html>
